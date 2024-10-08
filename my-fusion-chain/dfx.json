@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "my-fusion-chain-backend": {
+      "main": "src/my-fusion-chain-backend/main.mo",
+      "type": "motoko"
+    },
+    "my-fusion-chain-frontend": {
+      "dependencies": [
+        "my-fusion-chain-backend"
+      ],
+      "source": [
+        "src/my-fusion-chain-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "my-fusion-chain-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

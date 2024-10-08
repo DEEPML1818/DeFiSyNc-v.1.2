@@ -1,0 +1,170 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #e0e0e0;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.stat-item {
+  flex: 1;
+  margin: 0 10px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item h3 {
+  margin: 0;
+  color: #555;
+}
+
+.stat-item p {
+  margin: 5px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* src/App.css */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+select {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+select {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
