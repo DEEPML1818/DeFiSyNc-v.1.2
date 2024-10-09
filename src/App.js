@@ -6,10 +6,17 @@ import TLSNotary from "./components/TLSNotary";
 import LiquidityPools from "./components/LiquidityPools";
 import DummyCoinData from "./components/DummyCoinData";  // Import the dummy coin component
 import client from "./components/apolloClient";
+import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
+import { WalletModalProvider } from '@solana/wallet-adapter-react-ui';
+import { PhantomWalletAdapter } from '@solana/wallet-adapter-wallets';
+import { clusterApiUrl } from '@solana/web3.js';
+import '@solana/wallet-adapter-react-ui/styles.css'; // Optional: Adds styles for the wallet modal
 import "./App.css";
 
 function App() {
   const [worldcoinVerified, setWorldcoinVerified] = useState(false);
+  const network = clusterApiUrl('devnet');
+  const wallets = [new PhantomWalletAdapter()]; // You can add more wallets if needed
 
   const handleWorldcoinSuccess = (response) => {
     console.log("Worldcoin verification successful:", response);
@@ -23,7 +30,17 @@ function App() {
 
         {/* MetaMask Wallet Connect */}
         <MetaMaskConnect />
+        <div>
+          <h1>Solana wallet </h1>
 
+          <ConnectionProvider endpoint={network}>
+            <WalletProvider wallets={wallets} autoConnect>
+              <WalletModalProvider>
+              
+              </WalletModalProvider>
+            </WalletProvider>
+          </ConnectionProvider>
+        </div>
         {/* Optional Worldcoin Wallet */}
         <WorldcoinWallet onSuccess={handleWorldcoinSuccess} />
 
