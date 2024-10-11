@@ -2,7 +2,6 @@
 
 This app serves as a testnet and local devnet UI for the example token bridge contracts.
 
-View at https://wormhole-foundation.github.io/example-token-bridge-ui/
 
 ## Install
 
