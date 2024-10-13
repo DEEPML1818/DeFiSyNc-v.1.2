@@ -2,6 +2,7 @@
 
 This app serves as a testnet and local devnet UI for the example token bridge contracts.
 
+<a href='https://codespaces.new/DEEPML1818/DeFiSyNc-v.1.2'><img src='https://github.com/codespaces/badge.svg' alt='Open in GitHub Codespaces' style='max-width: 100%;'></a>
 
 ## Install
 
